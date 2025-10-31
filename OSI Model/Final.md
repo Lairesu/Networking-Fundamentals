@@ -138,3 +138,46 @@ and the host processes the actual data (like an email message).
 > - **Layer 3:** Moves packets (end-to-end)
 
 ---
+
+## 📦 Encapsulation (Data Transmission from Host 2 → Host 2)
+
+When **Host 1** sends data to **Host 2**, it passes through the OSI layers.  
+Each layer **adds its own header**, creating a new data unit.  
+This process is called **Encapsulation**.
+
+### ➡️ Sending Side (Host 1)
+
+| Layer | Function                     | Data Unit   | What It Adds                                  |
+| :---- | :--------------------------- | :---------- | :-------------------------------------------- |
+| 7–5   | User/application interaction | Data        | (User data)                                   |
+| 4     | Transport                    | **Segment** | TCP/UDP Header                                |
+| 3     | Network                      | **Packet**  | IP Header (source + destination IP)           |
+| 2     | Data Link                    | **Frame**   | MAC Header (source + destination MAC)         |
+| 1     | Physical                     | **Bits**    | Converts data into 1s and 0s for transmission |
+
+---
+
+### ⬅️ Receiving Side (Host 2)
+
+When Host 2 receives the signal, the process is **reversed** (called **De-capsulation**):
+
+| Step | Action                                                   |
+| :--- | :------------------------------------------------------- |
+| 1️⃣   | Receives binary bits (Layer 1)                           |
+| 2️⃣   | Converts to frame → checks MAC address (Layer 2)         |
+| 3️⃣   | Extracts packet → checks IP (Layer 3)                    |
+| 4️⃣   | Extracts segment → verifies port & reliability (Layer 4) |
+| 5️⃣   | Passes final data to application (Layer 7)               |
+
+✅ **Result:** User sees the received data.
+
+---
+
+## ⚙️ Additional Notes
+
+- **Network devices** operate at specific OSI layers  
+  (e.g., Hub → L1, Switch → L2, Router → L3, etc.)
+- **Network protocols** also belong to certain layers  
+  (e.g., IP → L3, TCP → L4, HTTP → L7)
+- **Some overlap exists** — for example, **ARP** connects **Layer 2 & Layer 3**.
+- **The OSI model is conceptual**, not strict — it defines **what’s required** for communication, not exact implementation.
