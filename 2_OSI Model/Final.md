@@ -1,11 +1,11 @@
-# 🌐 Networking Notes – Switch & OSI Model (Fundamentals)
+# Networking Notes – Switch & OSI Model (Fundamentals)
 
-## 🧠 Understanding the OSI Model
+## Understanding the OSI Model
 
 The main purpose of networking is **to share data** between hosts.  
 To make this possible, we follow a layered structure known as the **OSI (Open Systems Interconnection) Model**.
 
-### 🧍‍♂️ Analogy:
+### Analogy:
 
 Just like the human body has different systems:
 
@@ -19,37 +19,37 @@ Similarly, the OSI model has **layers**, each performing its specific role so th
 
 ---
 
-## 🧩 OSI Model Overview (7 Layers)
+## OSI Model Overview (7 Layers)
 
 1. **Physical Layer**
 2. **Data Link Layer**
 3. **Network Layer**
-4. Transport Layer
-5. Session Layer
-6. Presentation Layer
-7. Application Layer
+4. **Transport Layer**
+5. **Session Layer**
+6. **Presentation Layer**
+7. **Application Layer**
 
 ---
 
-### ⚙️ Layer 1 – Physical Layer
+###  Layer 1 – Physical Layer
 
 Also called the **“bit transmission” layer**.
 
 - It deals with **transporting raw bits** (0s and 1s) from one host to another.
 - Responsible for **putting and retrieving bits** onto the transmission medium.
 
-#### 🧰 Examples of Physical Technologies:
+####  Examples of Physical Technologies:
 
 - Cables (Ethernet, fiber optic)
 - Wi-Fi
 - Repeaters
 - Hubs
 
-> ⚡ The goal of the Physical Layer: **Transport bits**.
+> The goal of the Physical Layer: **Transport bits**.
 
 ---
 
-### 🧩 Layer 2 – Data Link Layer
+### Layer 2 – Data Link Layer
 
 Known as the **hop-to-hop delivery layer**.
 
@@ -57,13 +57,13 @@ Known as the **hop-to-hop delivery layer**.
 - Responsible for **framing** and **error detection** during transmission.
 - Uses **MAC (Media Access Control) addresses** to identify devices within the same local network.
 
-#### 💡 Examples:
+#### Examples:
 
 - **NIC (Network Interface Card)** / Wi-Fi Access Card
   - Older NICs were large, but now they fit inside smartwatches or phones!
 - **Switches**
 
-#### 🧬 MAC Address:
+#### MAC Address:
 
 A unique identifier assigned to each NIC.
 
@@ -73,25 +73,25 @@ Examples of MAC address formats:
 - `95:9c:83:4b:eb:45` → Linux
 - `959c.834b.eb45` → Routers/Switches (divided into 4 groups of 3 hex digits)
 
-> 🎯 Goal of Layer 2: **Hop-to-hop delivery using MAC addresses**.
+> Goal of Layer 2: **Hop-to-hop delivery using MAC addresses**.
 
 ---
 
-### 🌍 Layer 3 – Network Layer
+### Layer 3 – Network Layer
 
 This layer is responsible for **end-to-end delivery** between different networks.
 
 - Uses **IP addresses** for routing data from the **source host** to the **destination host**.
 - Handles **logical addressing**, **routing**, and **path determination**.
 
-#### 🧠 IP Address:
+#### IP Address:
 
 - A unique 32-bit address (IPv4) written as 4 octets (e.g., `192.168.1.1`).
 - Ensures that data can move across different networks — not just within one.
 
-#### 📡 Example: Sending Data Across Countries
+#### Example: Sending Data Across Countries
 
-Suppose we send an email from **Denmark to Japan** 🌍  
+Suppose we send an email from **Denmark to Japan**  
 There are **3 routers** between sender and receiver.
 
 | Hop                 | Source MAC → Destination MAC | IP Source → IP Destination |
@@ -110,18 +110,18 @@ and the host processes the actual data (like an email message).
 
 ---
 
-### 🔗 ARP – Address Resolution Protocol
+### ARP – Address Resolution Protocol
 
 **ARP** acts as the bridge between the **Network Layer (IP)** and the **Data Link Layer (MAC)**.
 
 - It maps **IP addresses → MAC addresses**.
 - Enables devices to find the correct hardware address to send data to.
 
-> 🧩 Think of ARP as the translator that connects “logical” addressing (IP) with “physical” addressing (MAC).
+> Think of ARP as the translator that connects “logical” addressing (IP) with “physical” addressing (MAC).
 
 ---
 
-## 🧭 Summary
+## Summary
 
 | Layer | Name      | Function            | Address Type | Example Devices |
 | ----- | --------- | ------------------- | ------------ | --------------- |
@@ -131,7 +131,7 @@ and the host processes the actual data (like an email message).
 
 ---
 
-📘 **In short:**
+ **In short:**
 
 > - **Layer 1:** Moves bits
 > - **Layer 2:** Moves frames (hop-to-hop)
@@ -139,7 +139,7 @@ and the host processes the actual data (like an email message).
 
 ---
 
-## 📦 Encapsulation (Data Transmission from Host 2 → Host 2)
+## Encapsulation (Data Transmission from Host 2 → Host 2)
 
 When **Host 1** sends data to **Host 2**, it passes through the OSI layers.  
 Each layer **adds its own header**, creating a new data unit.  
@@ -157,23 +157,23 @@ This process is called **Encapsulation**.
 
 ---
 
-### ⬅️ Receiving Side (Host 2)
+###  Receiving Side (Host 2)
 
 When Host 2 receives the signal, the process is **reversed** (called **De-capsulation**):
 
 | Step | Action                                                   |
 | :--- | :------------------------------------------------------- |
-| 1️⃣   | Receives binary bits (Layer 1)                           |
-| 2️⃣   | Converts to frame → checks MAC address (Layer 2)         |
-| 3️⃣   | Extracts packet → checks IP (Layer 3)                    |
-| 4️⃣   | Extracts segment → verifies port & reliability (Layer 4) |
-| 5️⃣   | Passes final data to application (Layer 7)               |
+| 1️  | Receives binary bits (Layer 1)                           |
+| 2️  | Converts to frame → checks MAC address (Layer 2)         |
+| 3️  | Extracts packet → checks IP (Layer 3)                    |
+| 4️ | Extracts segment → verifies port & reliability (Layer 4) |
+| 5️ | Passes final data to application (Layer 7)               |
 
-✅ **Result:** User sees the received data.
+**Result:** User sees the received data.
 
 ---
 
-## ⚙️ Additional Notes
+## Additional Notes
 
 - **Network devices** operate at specific OSI layers  
   (e.g., Hub → L1, Switch → L2, Router → L3, etc.)

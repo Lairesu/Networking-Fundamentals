@@ -1,7 +1,8 @@
----
-# **Everything Routers Do to Facilitate Communication**
+# Everything Routers Do to Facilitate Communication 
 
 Routers play a crucial role in connecting multiple networks and ensuring data can travel from one network to another. Below is a detailed explanation of how routers work, what routing is, how routing tables operate, and the full step-by-step process of packet forwarding.
+
+
 ---
 
 # **1. What Are Routers & What Is Routing?**

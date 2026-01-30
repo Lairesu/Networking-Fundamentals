@@ -1,4 +1,4 @@
-# ⚙️ Layer 1 – Physical Layer
+#  Layer 1 – Physical Layer
 
 Also called the **“bit transmission” layer**.
 
@@ -12,4 +12,4 @@ Also called the **“bit transmission” layer**.
 - Repeaters
 - Hubs
 
-> ⚡ The goal of the Physical Layer: **Transport bits**.
+>  The goal of the Physical Layer: **Transport bits**.

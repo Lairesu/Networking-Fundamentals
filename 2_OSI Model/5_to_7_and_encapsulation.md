@@ -1,4 +1,4 @@
-# 🌐 Layers 5–7: Session, Presentation & Application (Unified Application Layer)
+# Layers 5–7: Session, Presentation & Application (Unified Application Layer)
 
 ## Overview
 

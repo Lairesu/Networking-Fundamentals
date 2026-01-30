@@ -1,13 +1,13 @@
 # 🖧 Direct Host-to-Host Communication (Same Network)
 
-## 🧩 Overview
+## Overview
 
 When two hosts are in the **same local network**, they can communicate directly using **switches, hubs, or bridges** without a router.  
 This process involves **MAC addresses, IP addresses,** and the **ARP protocol** to ensure data reaches the correct destination.
 
 ---
 
-## 🖥️ Step-by-Step Process
+## Step-by-Step Process
 
 ### 1. Network Setup
 
@@ -100,7 +100,7 @@ This process involves **MAC addresses, IP addresses,** and the **ARP protocol** 
 
 ---
 
-> 💡 **Tip:** You can view your system’s ARP cache using:
+> **Tip:** You can view your system’s ARP cache using:
 >
 > - Windows: `arp -a`
 > - Linux/macOS: `ip neigh show` or `arp -n`

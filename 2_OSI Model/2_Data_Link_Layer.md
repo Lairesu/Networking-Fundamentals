@@ -1,4 +1,4 @@
-# 🧩 Layer 2 – Data Link Layer
+#  Layer 2 – Data Link Layer
 
 Known as the **hop-to-hop delivery layer**.
 
@@ -22,4 +22,4 @@ Examples of MAC address formats:
 - `95:9c:83:4b:eb:45` → Linux
 - `959c.834b.eb45` → Routers/Switches (divided into 3 groups of 4 hex digits)
 
-> 🎯 Goal of Layer 2: **Hop-to-hop delivery using MAC addresses**.
+>  Goal of Layer 2: **Hop-to-hop delivery using MAC addresses**.

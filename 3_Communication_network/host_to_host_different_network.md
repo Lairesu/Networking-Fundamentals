@@ -10,7 +10,7 @@ Each has its own **IP address** and **MAC address**.
 
 ---
 
-## 🧩 Step-by-Step Process
+## Step-by-Step Process
 
 ### 1. Host A prepares to send data to Host C
 
@@ -26,7 +26,7 @@ Each has its own **IP address** and **MAC address**.
   - **Source IP:** Host A’s IP
   - **Destination IP:** Host C’s IP
 
-✅ This **IP header stays the same** throughout the journey from Host A to Host C — even across multiple routers.  
+This **IP header stays the same** throughout the journey from Host A to Host C — even across multiple routers.  
 Because Layer 3 ensures **end-to-end delivery**.
 
 ---
@@ -87,7 +87,7 @@ Then:
 
 ---
 
-## 🔁 Summary of Encapsulation and Decapsulation
+## Summary of Encapsulation and Decapsulation
 
 | Layer     | Host A (Send)           | Router (Forward)        | Host C (Receive)       |
 | --------- | ----------------------- | ----------------------- | ---------------------- |
@@ -97,7 +97,7 @@ Then:
 
 ---
 
-## ⚙️ Key Points
+## Key Points
 
 - **Layer 3 (IP)** ensures **end-to-end addressing** (unchanged across hops).
 - **Layer 2 (MAC)** ensures **hop-to-hop delivery** (changes every time the packet crosses a router).

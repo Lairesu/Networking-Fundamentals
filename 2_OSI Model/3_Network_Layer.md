@@ -1,4 +1,4 @@
-# 🌍 Layer 3 – Network Layer
+# Layer 3 – Network Layer
 
 This layer is responsible for **end-to-end delivery** between different networks.
 
@@ -12,7 +12,7 @@ This layer is responsible for **end-to-end delivery** between different networks
 
 ## Example: Sending Data Across Countries
 
-Suppose we send an email from **Denmark host to Japan host** 🌍  
+Suppose we send an email from **Denmark host to Japan host** 
 There are **3 routers** between sender and receiver.
 
 | Hop                 | Source MAC → Destination MAC | IP Source → IP Destination |
@@ -31,13 +31,13 @@ and the host processes the actual data (like an email message).
 
 ---
 
-### 🔗 ARP – Address Resolution Protocol
+### ARP – Address Resolution Protocol
 
 **ARP** acts as the bridge between the **Network Layer (IP)** and the **Data Link Layer (MAC)**.
 
 - It maps **IP addresses → MAC addresses**.
 - Enables devices to find the correct hardware address to send data to.
 
-> 🧩 Think of ARP as the translator that connects “logical” addressing (IP) with “physical” addressing (MAC).
+> Think of ARP as the translator that connects “logical” addressing (IP) with “physical” addressing (MAC).
 
 ---
