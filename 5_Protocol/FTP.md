@@ -24,9 +24,14 @@ FTP uses two separate connections:
 
 ---
 
-> Note:
-> 
-> The response cose we get for the FTP 'Login Successful' is ``230``
+## Commands
+| command            | Purpose                                     |
+| ------------------ | ------------------------------------------- |
+| **ftp -?**         | Display the 'ftp' client help menu          |
+| **get <filename>** | Downlaod the file we found on the FTP server|
+
+
+> Note: The response cose we get for the FTP 'Login Successful' is ``230``
 
 ## Active vs Passive Mode
 
