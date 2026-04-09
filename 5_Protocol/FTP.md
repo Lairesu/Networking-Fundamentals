@@ -24,6 +24,10 @@ FTP uses two separate connections:
 
 ---
 
+> Note:
+> 
+> The response cose we get for the FTP 'Login Successful' is ``230``
+
 ## Active vs Passive Mode
 
 ### Active Mode
