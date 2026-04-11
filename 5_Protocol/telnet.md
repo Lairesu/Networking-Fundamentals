@@ -155,3 +155,4 @@ Telnet = SSH without encryption
          finding it open = easy target
          always try blank credentials first
 ```
+
